@@ -1,0 +1,512 @@
+@charset "utf-8";
+/* CSS Document */
+img.img{
+opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+img.lazyloaded {
+  opacity: 1;
+}
+
+
+@media print, screen and (min-width: 767px) {
+
+/*----------------------------------------------
+　　コンテンツ
+----------------------------------------------*/
+
+#all nav ul li:nth-child(4) a {
+border-bottom: #000 1px solid;
+}
+
+.head_block{
+max-width:1280px;
+margin:0px auto;
+}
+
+.head_block h1{
+font-size: 3.4rem;
+}
+
+.head_block h1 span{
+font-size: 0.4em;
+display: block;
+margin-bottom: -10px;
+}
+
+.head_block nav ul{
+display: flex;
+justify-content: flex-end;
+padding-top: 20px;
+}
+
+.head_block nav ul li a{
+font-size: 1.3rem;
+margin-left: 2em;
+}
+
+.head_nav{
+align-items: center;
+margin: 0px 0px 50px;
+}
+
+.block01{
+display: flex;
+align-items: center;
+margin-bottom: 150px;
+}
+
+.block01 div:first-of-type{
+margin-right: 60px;
+width: 65%;
+}
+
+.block01 .block01R{
+width: 35%;
+padding-right: 80px;
+}
+
+
+.block01 .block01R h2{
+font-family: futura-pt, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 5.0vw;
+line-height: 1.0;
+margin-bottom: 60px;
+}
+
+.block01 .block01R p{
+font-size: 1.1vw;
+line-height: 1.8;
+}
+
+.block02 h3, .block03 h3, .block04 h3{
+font-family: futura-pt, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 4.0rem;
+margin-bottom: 50px;
+}
+
+.block02 .railway{
+display: flex;
+justify-content: space-around;
+margin-bottom: 150px;
+}
+
+.block02 .railway div{
+width: 30%;
+}
+
+.block02 h4{
+font-size: 1.8rem;
+margin-bottom: 30px;
+position: relative;
+}
+
+.block02 h4:after{
+content: "";
+display: inline-block;
+background: url("../images/hayabusa.png") no-repeat;
+background-size: contain;
+position: absolute;
+top: -200%;
+right: -10%;
+width: 300px;
+height: 129px;
+}
+
+.block02 p.bottomtxt{
+text-align: right;
+margin: 50px 0px 200px;
+}
+
+.block02 ul, .block03 ul{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.block04 ul{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 200px;
+}
+
+.block02 ul li, .block03 ul li, .block04 ul li{
+width: calc(25% - 50px);
+}
+
+.block02 ul li h5, .block04 ul li h5{
+font-size: 1.3rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.block02 ul li p{
+font-size: 1.3rem;
+color: #666666;
+}
+
+.block02 ul li p span{
+font-size: 100%;
+color: #000;
+margin-right: 1.5em;
+}
+
+.block03{
+margin-bottom: 200px;
+}
+
+.block03 .highway{
+width: 75%;
+margin: 0px auto 100px;
+}
+
+.block03 ul li p, .block04 ul li p{
+font-size: 1.3rem;
+}
+
+.block04 > p{
+font-size: 1.4rem;
+margin-bottom: 100px;
+}
+
+.block04{
+margin-bottom: 150px;
+}
+
+.block04 .bus_map{
+width: 75%;
+margin: 0px auto 100px;
+}
+
+.block04 h4{
+font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+font-size: 2.0rem;
+width: 80%;
+margin: 0 auto 20px;
+text-align: left;
+}
+
+.block04 .bustable01, .block04 .bustable02{
+font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+width: 80%;
+margin: 0 auto;
+color: #666666;
+margin-bottom: 50px;
+}
+
+.block04 .bustable01 tr, .block04 .bustable02 tr{
+border: #666666 1px solid;
+border-left: none;
+border-right: none;
+}
+
+.block04 .bustable01 td, .block04 .bustable02 td{
+font-size: 1.5rem;
+padding: 0.3em 1em;
+vertical-align: top;
+}
+
+.block04 .bustable01 tr td:nth-of-type(1){width: 45%;}
+.block04 .bustable01 tr td:nth-of-type(2){
+border-left: #666666 1px solid;
+border-right: #666666 1px solid;
+width: 25%;
+}
+.block04 .bustable01 tr td:nth-of-type(3){width: 30%;}
+
+.block04 .bustable02 tr td:nth-of-type(1){
+border-right: #666666 1px solid;
+width: 70%;
+}
+
+.block05 h4{
+font-size: 3.0rem;
+text-align: center;
+}
+
+.block05 > p{
+font-size: 1.4rem;
+text-align: center;
+margin-bottom: 50px;
+}
+
+.block05 ul{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 200px;
+}
+
+.block05 ul li{
+width: calc(25% - 50px);
+margin-bottom: 80px;
+}
+
+.block05 ul li h5{
+font-size: 1.3rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.block05 ul li p{
+font-size: 1.2rem;
+line-height: 1.3;
+}
+
+}
+
+
+@media screen and (max-width: 768px) { 
+
+header .top_Box{
+display: none;
+}
+
+.head_block h1{
+font-size: 2.0rem;
+margin-left: 0.3em;
+}
+
+.head_block h1 span{
+font-size: 0.4em;
+display: block;
+margin-bottom: -10px;
+}
+
+.block01{
+margin-bottom: 50px;
+}
+
+.block01 .block01R h2{
+font-family: futura-pt, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 3.5rem;
+text-align: center;
+line-height: 1.0;
+margin-bottom: 30px;
+}
+
+.block01 .block01R p{
+font-size: 1.3rem;
+line-height: 1.8;
+}
+
+
+
+
+
+
+.block02 h3, .block03 h3, .block04 h3{
+font-family: futura-pt, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.block02 .railway{
+display: flex;
+justify-content: space-around;
+margin-bottom: 50px;
+}
+
+.block02 .railway div{
+width: 40%;
+}
+
+.block02 h4{
+font-size: 1.3rem;
+line-height: 1.5;
+margin-bottom: 30px;
+}
+
+/*.block02 h4:after{
+content: "";
+display: inline-block;
+background: url("../images/hayabusa.png") no-repeat;
+background-size: contain;
+position: absolute;
+top: -200%;
+right: -10%;
+width: 300px;
+height: 129px;
+}*/
+
+.block02 p.bottomtxt{
+margin: 0px 0px 80px;
+}
+
+.block02 ul, .block03 ul{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.block04 ul{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 50px;
+}
+
+.block02 ul li, .block03 ul li, .block04 ul li{
+width: calc(50% - 5px);
+margin-bottom: 30px;
+}
+
+.block02 ul li h5, .block04 ul li h5{
+font-size: 1.3rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.block02 ul li p{
+font-size: 1.2rem;
+color: #666666;
+line-height: 1.3;
+}
+
+.block02 ul li p span{
+font-size: 100%;
+color: #000;
+margin-right: 1.5em;
+}
+
+.block03{
+margin-bottom: 80px;
+}
+
+.block03 .highway{
+width: 90%;
+margin: 0px auto 30px;
+}
+
+.block03 ul li p, .block04 ul li p{
+font-size: 1.2rem;
+}
+
+.block04 > p{
+font-size: 1.4rem;
+margin-bottom: 100px;
+}
+
+.block04{
+margin-bottom: 50px;
+}
+
+.block04 .bus_map{
+width: 90%;
+margin: 0px auto 30px;
+}
+
+.block04 h4{
+font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+font-size: 1.8rem;
+margin: 0 auto 20px;
+text-align: left;
+}
+
+.block04 .bustable01, .block04 .bustable02{
+font-family:"メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+width: 100%;
+margin: 0 auto;
+color: #666666;
+margin-bottom: 50px;
+}
+
+.block04 .bustable01 tr, .block04 .bustable02 tr{
+border: #666666 1px solid;
+border-left: none;
+border-right: none;
+}
+
+.block04 .bustable01 td, .block04 .bustable02 td{
+font-size: 1.3rem;
+padding: 0.3em 1em;
+vertical-align: top;
+}
+
+.block04 .bustable01 tr td:nth-of-type(1){width: 45%;}
+.block04 .bustable01 tr td:nth-of-type(2){
+border-left: #666666 1px solid;
+border-right: #666666 1px solid;
+width: 25%;
+}
+.block04 .bustable01 tr td:nth-of-type(3){width: 30%;}
+
+.block04 .bustable02 tr td:nth-of-type(1){
+border-right: #666666 1px solid;
+width: 70%;
+}
+
+.block05 h4{
+font-size: 1.6rem;
+line-height: 1.5;
+margin-bottom: 10px;
+}
+
+.block05 > p{
+font-size: 1.3rem;
+line-height: 1.5;
+margin-bottom: 50px;
+}
+
+.block05 ul{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin-bottom: 50px;
+}
+
+.block05 ul li{
+width: calc(50% - 5px);
+margin-bottom: 30px;
+}
+
+.block05 ul li h5{
+font-size: 1.3rem;
+line-height: 1.5;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.block05 ul li p{
+font-size: 1.2rem;
+line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+

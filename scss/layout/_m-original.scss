@@ -1,0 +1,119 @@
+.outlink{
+    &.-maeda{
+        div{
+            @include mq(sp){
+                margin: auto;
+            }
+            @include mq(tb){
+                margin: 0px auto 5px;
+            }
+            &:nth-child(1),
+            &:nth-child(2){
+                img{width: 50%;}
+            }
+        }
+    }
+}
+
+
+.l-contents{
+	width: 100%;
+	height: auto;
+	&.-img{// 背景画像のみ
+		width: 100%;
+		height: auto;
+	}
+	&.-img-bg{// 背景画像＋コンテンツ
+		position: relative;
+		.imgBox{// 背景画像
+			width: 100%;
+			height: auto;
+			&.-parallax{//パラドックス背景の場合、ここは透明画像
+				justify-content: center;
+				align-items: center;
+
+				background-attachment: fixed;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				&.-parallax_bg{//ここに背景を指定する。
+					background-image: url(../images/bg/header_bg_s.jpg);
+					@include mq(tb){
+						background-image: url(../images/bg/header_bg.jpg);
+					}
+				}
+			}
+		}
+		.l-contentsBox{// コンテンツ要素
+			width: 100%;
+			position: absolute;
+			
+			//サイト右側中段に表示 （PCのみ）
+			&.-text{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				// width: auto;
+                p{
+                    font-size: 1rem;
+                    // font-size: 1.4rem;
+                    text-align: center;
+                    line-height: 2.2;
+                    @include mq(tb){
+                        font-size: 2rem;
+                    }
+                }
+				a{
+					display: block;
+					padding: 8% 23%;
+				}
+			}
+		}
+	}
+}
+
+
+.l-linkImg{
+	display: block;
+	width: auto;
+	height: auto;
+	//----- hoverアニメーション -----
+    &.-p03{
+        display: block;
+        transform: scale(1);
+        transition-duration: 0.5s;
+        overflow: hidden;
+        @include mq(tb){
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                transform: scale(.95);
+                transition-duration: 0.2s;
+            }
+        }
+    }
+
+}
+
+
+.column_ph01{
+    &.-last{
+        margin: 0px auto 50px;
+        @include mq(tb){
+            margin: 0px auto 15px;
+        }
+    }
+}
+
+
+
+.interview_box{
+	li{
+		@include mq(sp){
+			width: 95%;
+			margin: auto;
+		}
+		@include mq(tb){
+			width: calc(33.333% - 20px) !important;
+		}
+	}
+}
